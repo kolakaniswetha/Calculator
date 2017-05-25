@@ -3,18 +3,17 @@ import java.util.Scanner;
 
  class Calc1
  {
-	 int a,b,c,ch,res;
+	 float a,b,c,res;
 	 
 	 public Calc1()
 {
 		 a=0;
 		 b=0;
 		 c=0;
-		 ch=0;
 		 res=0;
  }
 	
-	public int menu()
+	public float menu()
         {
 		System.out.println("1.addition");
 		System.out.println("2.substraction");
@@ -22,7 +21,7 @@ import java.util.Scanner;
 		System.out.println("4.div");
 		System.out.println("enter your chioce");
 		Scanner s=new Scanner(System.in);
-		ch=s.nextInt();
+		a=s.nextFloat();
 		return 0;
 		
         }
@@ -31,16 +30,16 @@ import java.util.Scanner;
         {
     	Scanner s=new Scanner(System.in);
     	System.out.println("enter first num");
-    	a=s.nextInt();
+    	a=s.nextFloat();
         System.out.println("enter second num");
-    	b=s.nextInt();
+    	b=s.nextFloat();
     	   
 	}
 	
     public void performOperation()
     {
     	
-    switch(ch)
+    switch()
     {
     case 1:
     	System.out.println("addition");
@@ -67,7 +66,7 @@ import java.util.Scanner;
     
     }
 
-    int add()
+    float add()
 	
     {	
 	c=a+b;
@@ -75,20 +74,20 @@ import java.util.Scanner;
 	
     }
 	
-	int subtract()
+	float subtract()
 	{
 		c=a-b;
 		return c;
 		
 	}
 	
-	int multiply()
+	float multiply()
 	{
 		c=a*b;
 		return c;
 	}
 		
-	int divide()
+	float divide()
 	{
 	c=a/b;
 	return c;
